@@ -5,8 +5,8 @@ Simple script that checks prices on [Ceneo](https://ceneo.pl) and sends you resu
 ## Prerequisites
 
 Before you can use it you need to have 2 things:
-	* Telegram Bot's access token
-	* Telegram user's id
+* Telegram Bot's access token
+* Telegram user's id
 
 Helpful links:
 * [How to create Telegram Bot](https://core.telegram.org/bots#6-botfather)

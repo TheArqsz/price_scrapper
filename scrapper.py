@@ -58,6 +58,7 @@ def get_data_for_product(product="Samsung+s10e"):
 	return entries
 	
 def send_info(entries):
+	CENEO_URL = "https://www.ceneo.pl"
 	product_message = ""	
 	for product_url in list(entries)[0:6]:
 		product_message += f"[{entries[product_url]['name']}]({product_url}) - `{entries[product_url]['price']} PLN`\n"

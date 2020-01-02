@@ -9,7 +9,7 @@ Before you can use it you need to have 2 things:
 	* Telegram user's id
 
 Helpful links:
-	* [How to create Telegram Bot](https://core.telegram.org/bots#6-botfather)
+* [How to create Telegram Bot](https://core.telegram.org/bots#6-botfather)
 
 To get your Telegram Bot's access token just follow steps from the link above 
 
@@ -19,15 +19,11 @@ After you have those two things, save them as environmental variables:
 * Windows
 	```
 	setx TG_BOT_TOKEN "{access_token}"
-	```
-	```
 	setx TG_USER_ID {chat.id}
 	```
 * Linux
 	```
 	export TG_BOT_TOKEN="{access_token}"
-	```
-	```
 	export TG_USER_ID={chat.id}
 	```
 	

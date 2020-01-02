@@ -3,6 +3,7 @@
 Simple script that checks prices on [Ceneo](https://ceneo.pl) and sends you results via Telegram
 
 ## Prerequisites
+Scripts are written under **python 3.7.4**
 
 Before you can use it you need to have 2 things:
 * Telegram Bot's access token

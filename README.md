@@ -16,14 +16,18 @@ To get your Telegram Bot's access token just follow steps from the link above
 To get your user's id just write something to [Json Dump Bot](https://web.telegram.org/#/im?p=@JsonDumpBot) and save **chat.id**
 
 After you have those two things, save them as environmental variables:
-	* Windows
+* Windows
 	```
 	setx TG_BOT_TOKEN "{access_token}"
+	```
+	```
 	setx TG_USER_ID {chat.id}
 	```
-	* Linux
+* Linux
 	```
 	export TG_BOT_TOKEN="{access_token}"
+	```
+	```
 	export TG_USER_ID={chat.id}
 	```
 	

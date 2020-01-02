@@ -21,7 +21,7 @@ After you have those two things, save them as environmental variables:
 	setx TG_BOT_TOKEN "{access_token}"
 	setx TG_USER_ID {chat.id}
 	```
-* Linux
+* *nix (sh, zsh and bash)
 	```
 	export TG_BOT_TOKEN="{access_token}"
 	export TG_USER_ID={chat.id}

@@ -16,7 +16,7 @@ You can find everything under:
 python scrapper.py --help
 ```
 
-If you just want to ccopy and paste from here:
+If you just want to copy and paste from here:
 
 ```
 python scrapper.py "Samsung s10e"

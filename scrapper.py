@@ -20,6 +20,7 @@ def get_data_for_product(product="Samsung+s10e"):
 	try:
 		response = requests.get(CENEO_SEARCH_URL)
 		if response.status_code != 200:
+			print(f"Error: {response.text}")
 			raise requests.exceptions.ConnectionError
 	except Exception as e:
 		print(f"An error occured")
@@ -35,12 +36,11 @@ def get_data_for_product(product="Samsung+s10e"):
 		exit(0)
 
 	entries = {}
-	for product in soup.findAll(attrs={'class': re.compile(r".*cat-prod-row-content.*")}):
-		product_desc = product.find("div", attrs={'class': "cat-prod-row-desc"})
-		product_price = product.find("div", attrs={'class': "cat-prod-row-price"})
-		
+	for product in soup.findAll(attrs={'class': re.compile(r".*cat-prod-row__content.*")}):
+		product_desc = product.find("div", attrs={'class': "cat-prod-row__desc"})
+		product_price = product.find("div", attrs={'class': "cat-prod-row__price"})
 		try:
-			product_name = product_desc.find("strong", attrs={"class": "cat-prod-row-name"}).find('a').text
+			product_name = product_desc.find("strong", attrs={"class": "cat-prod-row__name"}).find('a').text
 		except AttributeError:
 			continue
 
